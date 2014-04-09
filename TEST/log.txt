@@ -1,0 +1,1680 @@
+
+###### commande: NGS.pl -d /scratch/tranchant/DATA-TEST/CD/ -c software.config.txt -a adaptator.txt  
+
+###### INITIALIZATION STEP
+
+## REPERTOIRE DE DONNEES: /scratch/tranchant/DATA-TEST/CD/
+
+## FICHIER ADAPTATEUR: adaptator.txt
+
+###### OUTPUT DIRECTORY CREATION
+## Creation du fichier configuration /scratch/tranchant/DATA-TEST/CD/2_CUTADAPT/cutadapt.conf
+
+###### FASTQC STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq
+## FASTQC EXEC STEP: /usr/local/FastQC/fastqc -q -o /scratch/tranchant/DATA-TEST/CD/1_FASTQC /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq
+Command Done 
+
+## FASTQC PARSE STEP :  : /scratch/tranchant/DATA-TEST/CD/1_FASTQC/RC1_1_fastqc/fastqc_data.txt
+
+
+###### CUTADAPT STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq
+: /usr/local/cutadapt-1.2.1/bin/cutadapt $(</scratch/tranchant/DATA-TEST/CD/2_CUTADAPT/cutadapt.conf) /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq -o /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq_cutadapt.fq
+Command Done 
+
+###### FASTQC STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq
+## FASTQC EXEC STEP: /usr/local/FastQC/fastqc -q -o /scratch/tranchant/DATA-TEST/CD/1_FASTQC /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq
+Command Done 
+
+## FASTQC PARSE STEP :  : /scratch/tranchant/DATA-TEST/CD/1_FASTQC/RC1_2_fastqc/fastqc_data.txt
+
+
+###### CUTADAPT STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq
+: /usr/local/cutadapt-1.2.1/bin/cutadapt $(</scratch/tranchant/DATA-TEST/CD/2_CUTADAPT/cutadapt.conf) /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq -o /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq_cutadapt.fq
+Command Done 
+1226 pairs were recovered (2452 sequences), and 0 were extracted.
+
+###### commande: NGS.pl -d /scratch/tranchant/DATA-TEST/CD/ -c software.config.txt -a adaptator.txt  
+
+###### INITIALIZATION STEP
+
+## REPERTOIRE DE DONNEES: /scratch/tranchant/DATA-TEST/CD/
+
+###### commande: NGS.pl -d /scratch/tranchant/DATA-TEST/CD/ -c software.config.txt -a adaptator.txt  
+
+###### INITIALIZATION STEP
+
+## REPERTOIRE DE DONNEES: /scratch/tranchant/DATA-TEST/CD/
+
+###### commande: NGS.pl -d /scratch/tranchant/DATA-TEST/CD/ -c software.config.txt -a adaptator.txt  
+
+###### INITIALIZATION STEP
+
+## REPERTOIRE DE DONNEES: /scratch/tranchant/DATA-TEST/CD/
+$VAR1 = {
+          '' => {
+                  'unknown' => [
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_1.fastq',
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_1.fastq_cutadapt.fq',
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_2.fastq',
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_2.fastq_cutadapt.fq',
+                                 '',
+                                 '/scratch/tranchant/DATA-TEST/CD//1_FASTQC:',
+                                 'RC1_1_fastqc',
+                                 'RC1_1_fastqc.zip',
+                                 'RC1_2_fastqc',
+                                 'RC1_2_fastqc.zip',
+                                 '',
+                                 '/scratch/tranchant/DATA-TEST/CD//2_CUTADAPT:',
+                                 'cutadapt.conf',
+                                 'info-file',
+                                 'text'
+                               ]
+                }
+        };
+
+## FICHIER ADAPTATEUR: adaptator.txt
+
+###### OUTPUT DIRECTORY CREATION
+Uncaught exception from user code:
+	
+	Bye...
+	toolbox::exportLog('Unable to create directory /scratch/tranchant/DATA-TEST/CD/1_...', 0) called at ../Modules/toolbox.pm line 160
+	toolbox::makeDir('/scratch/tranchant/DATA-TEST/CD/1_FASTQC', 0) called at NGS.pl line 134
+
+
+<---->An Error Occured!!<---->
+
+	Unable to create directory /scratch/tranchant/DATA-TEST/CD/1_FASTQC Le fichier existe 
+
+Bye...
+
+###### commande: NGS.pl -d /scratch/tranchant/DATA-TEST/CD/ -c software.config.txt -a adaptator.txt  
+
+###### INITIALIZATION STEP
+
+## REPERTOIRE DE DONNEES: /scratch/tranchant/DATA-TEST/CD/
+$VAR1 = {
+          '' => {
+                  'unknown' => [
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_1.fastq',
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_1.fastq_cutadapt.fq',
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_2.fastq',
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_2.fastq_cutadapt.fq',
+                                 '',
+                                 '/scratch/tranchant/DATA-TEST/CD//1_FASTQC:',
+                                 'RC1_1_fastqc',
+                                 'RC1_1_fastqc.zip',
+                                 'RC1_2_fastqc',
+                                 'RC1_2_fastqc.zip',
+                                 '',
+                                 '/scratch/tranchant/DATA-TEST/CD//2_CUTADAPT:',
+                                 'cutadapt.conf',
+                                 'info-file',
+                                 'text'
+                               ]
+                }
+        };
+
+## FICHIER ADAPTATEUR: adaptator.txt
+
+###### OUTPUT DIRECTORY CREATION
+## Creation du fichier configuration /scratch/tranchant/DATA-TEST/CD/2_CUTADAPT/cutadapt.conf
+
+###### FASTQC STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq
+## FASTQC EXEC STEP: /usr/local/FastQC/fastqc -q -o /scratch/tranchant/DATA-TEST/CD/1_FASTQC /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq
+Command Done 
+
+## FASTQC PARSE STEP :  : /scratch/tranchant/DATA-TEST/CD/1_FASTQC/RC1_1_fastqc/fastqc_data.txt
+
+
+###### CUTADAPT STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq
+: /usr/local/cutadapt-1.2.1/bin/cutadapt $(</scratch/tranchant/DATA-TEST/CD/2_CUTADAPT/cutadapt.conf) /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq -o /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq_cutadapt.fq
+Command Done 
+
+###### FASTQC STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq
+## FASTQC EXEC STEP: /usr/local/FastQC/fastqc -q -o /scratch/tranchant/DATA-TEST/CD/1_FASTQC /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq
+Command Done 
+
+## FASTQC PARSE STEP :  : /scratch/tranchant/DATA-TEST/CD/1_FASTQC/RC1_2_fastqc/fastqc_data.txt
+
+
+###### CUTADAPT STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq
+: /usr/local/cutadapt-1.2.1/bin/cutadapt $(</scratch/tranchant/DATA-TEST/CD/2_CUTADAPT/cutadapt.conf) /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq -o /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq_cutadapt.fq
+Command Done 
+1226 pairs were recovered (2452 sequences), and 0 were extracted.
+
+###### commande: NGS.pl -d /scratch/tranchant/DATA-TEST/CD/ -c software.config.txt -a adaptator.txt  
+
+###### INITIALIZATION STEP
+
+## REPERTOIRE DE DONNEES: /scratch/tranchant/DATA-TEST/CD/
+$VAR1 = {
+          '' => {
+                  'unknown' => [
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_1.fastq',
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_1.fastq_cutadapt.fq',
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_2.fastq',
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_2.fastq_cutadapt.fq',
+                                 '',
+                                 '/scratch/tranchant/DATA-TEST/CD//1_FASTQC:',
+                                 'RC1_1_fastqc',
+                                 'RC1_1_fastqc.zip',
+                                 'RC1_2_fastqc',
+                                 'RC1_2_fastqc.zip',
+                                 '',
+                                 '/scratch/tranchant/DATA-TEST/CD//2_CUTADAPT:',
+                                 'cutadapt.conf'
+                               ]
+                }
+        };
+
+## FICHIER ADAPTATEUR: adaptator.txt
+
+###### OUTPUT DIRECTORY CREATION
+## Creation du fichier configuration /scratch/tranchant/DATA-TEST/CD/2_CUTADAPT/cutadapt.conf
+
+###### FASTQC STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq
+## FASTQC EXEC STEP: /usr/local/FastQC/fastqc -q -o /scratch/tranchant/DATA-TEST/CD/1_FASTQC /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq
+Command Done 
+
+## FASTQC PARSE STEP :  : /scratch/tranchant/DATA-TEST/CD/1_FASTQC/RC1_1_fastqc/fastqc_data.txt
+
+
+###### CUTADAPT STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq
+: /usr/local/cutadapt-1.2.1/bin/cutadapt $(</scratch/tranchant/DATA-TEST/CD/2_CUTADAPT/cutadapt.conf) /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq -o /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq_cutadapt.fq
+Command Done 
+
+###### FASTQC STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq
+## FASTQC EXEC STEP: /usr/local/FastQC/fastqc -q -o /scratch/tranchant/DATA-TEST/CD/1_FASTQC /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq
+Command Done 
+
+## FASTQC PARSE STEP :  : /scratch/tranchant/DATA-TEST/CD/1_FASTQC/RC1_2_fastqc/fastqc_data.txt
+
+
+###### CUTADAPT STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq
+: /usr/local/cutadapt-1.2.1/bin/cutadapt $(</scratch/tranchant/DATA-TEST/CD/2_CUTADAPT/cutadapt.conf) /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq -o /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq_cutadapt.fq
+Command Done 
+1226 pairs were recovered (2452 sequences), and 0 were extracted.
+
+###### commande: NGS.pl -d /scratch/tranchant/DATA-TEST/CD/ -c software.config.txt -a adaptator.txt  
+
+###### INITIALIZATION STEP
+
+## REPERTOIRE DE DONNEES: /scratch/tranchant/DATA-TEST/CD/
+$VAR1 = {
+          '' => {
+                  'unknown' => [
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_1.fastq',
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_1.fastq_cutadapt.fq',
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_2.fastq',
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_2.fastq_cutadapt.fq',
+                                 '',
+                                 '/scratch/tranchant/DATA-TEST/CD//1_FASTQC:',
+                                 'RC1_1_fastqc',
+                                 'RC1_1_fastqc.zip',
+                                 'RC1_2_fastqc',
+                                 'RC1_2_fastqc.zip',
+                                 '',
+                                 '/scratch/tranchant/DATA-TEST/CD//2_CUTADAPT:',
+                                 'cutadapt.conf'
+                               ]
+                }
+        };
+
+## FICHIER ADAPTATEUR: adaptator.txt
+
+###### OUTPUT DIRECTORY CREATION
+## Creation du fichier configuration /scratch/tranchant/DATA-TEST/CD/2_CUTADAPT/cutadapt.conf
+
+###### FASTQC STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq
+## FASTQC EXEC STEP: /usr/local/FastQC/fastqc -q -o /scratch/tranchant/DATA-TEST/CD/1_FASTQC /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq
+Command Done 
+
+## FASTQC PARSE STEP :  : /scratch/tranchant/DATA-TEST/CD/1_FASTQC/RC1_1_fastqc/fastqc_data.txt
+
+
+###### CUTADAPT STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq
+: /usr/local/cutadapt-1.2.1/bin/cutadapt $(</scratch/tranchant/DATA-TEST/CD/2_CUTADAPT/cutadapt.conf) /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq -o /scratch/tranchant/DATA-TEST/CD//RC1_1.fastq_cutadapt.fq
+Command Done 
+
+###### FASTQC STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq
+## FASTQC EXEC STEP: /usr/local/FastQC/fastqc -q -o /scratch/tranchant/DATA-TEST/CD/1_FASTQC /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq
+Command Done 
+
+## FASTQC PARSE STEP :  : /scratch/tranchant/DATA-TEST/CD/1_FASTQC/RC1_2_fastqc/fastqc_data.txt
+
+
+###### CUTADAPT STEP
+## fastqc /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq
+: /usr/local/cutadapt-1.2.1/bin/cutadapt $(</scratch/tranchant/DATA-TEST/CD/2_CUTADAPT/cutadapt.conf) /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq -o /scratch/tranchant/DATA-TEST/CD//RC1_2.fastq_cutadapt.fq
+Command Done 
+1226 pairs were recovered (2452 sequences), and 0 were extracted.
+
+###### commande: NGS.pl -d /scratch/tranchant/DATA-TEST/CD/ -c software.config.txt -a adaptator.txt  
+
+###### INITIALIZATION STEP
+
+## REPERTOIRE DE DONNEES: /scratch/tranchant/DATA-TEST/CD/
+$VAR1 = {
+          '' => {
+                  'unknown' => [
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_1.fastq',
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_2.fastq'
+                               ]
+                }
+        };
+
+## FICHIER ADAPTATEUR: adaptator.txt
+
+###### OUTPUT DIRECTORY CREATION
+Uncaught exception from user code:
+	
+	Bye...
+	toolbox::exportLog('Directory /scratch/tranchant/DATA-TEST/CD/1_FASTQC does not e...', 0) called at ../Modules/toolbox.pm line 142
+	toolbox::existsDir('/scratch/tranchant/DATA-TEST/CD/1_FASTQC') called at ../Modules/toolbox.pm line 155
+	toolbox::makeDir('/scratch/tranchant/DATA-TEST/CD/1_FASTQC', 1) called at NGS.pl line 135
+
+
+<---->An Error Occured!!<---->
+
+	Directory /scratch/tranchant/DATA-TEST/CD/1_FASTQC does not exist : Aucun fichier ou dossier de ce type 
+
+Bye...
+
+###### commande: NGS.pl -d /scratch/tranchant/DATA-TEST/CD/ -c software.config.txt -a adaptator.txt  
+
+###### INITIALIZATION STEP
+
+## REPERTOIRE DE DONNEES: /scratch/tranchant/DATA-TEST/CD/
+$VAR1 = {
+          '' => {
+                  'unknown' => [
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_1.fastq',
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_2.fastq'
+                               ]
+                }
+        };
+
+## FICHIER ADAPTATEUR: adaptator.txt
+
+###### OUTPUT DIRECTORY CREATION
+Uncaught exception from user code:
+	
+	Bye...
+	toolbox::exportLog('Directory /scratch/tranchant/DATA-TEST/CD/1_FASTQC does not e...', 0) called at ../Modules/toolbox.pm line 142
+	toolbox::existsDir('/scratch/tranchant/DATA-TEST/CD/1_FASTQC') called at ../Modules/toolbox.pm line 155
+	toolbox::makeDir('/scratch/tranchant/DATA-TEST/CD/1_FASTQC', 1) called at NGS.pl line 135
+
+
+<---->An Error Occured!!<---->
+
+	Directory /scratch/tranchant/DATA-TEST/CD/1_FASTQC does not exist : Aucun fichier ou dossier de ce type 
+
+Bye...
+
+###### commande: NGS.pl -d /scratch/tranchant/DATA-TEST/CD/ -c software.config.txt -a adaptator.txt  
+
+###### INITIALIZATION STEP
+
+## REPERTOIRE DE DONNEES: /scratch/tranchant/DATA-TEST/CD/
+$VAR1 = {
+          '' => {
+                  'unknown' => [
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_1.fastq',
+                                 '/scratch/tranchant/DATA-TEST/CD//RC1_2.fastq'
+                               ]
+                }
+        };
+
+## FICHIER ADAPTATEUR: adaptator.txt
+
+###### OUTPUT DIRECTORY CREATION
+Uncaught exception from user code:
+	
+	Bye...
+	toolbox::exportLog('Directory /scratch/tranchant/DATA-TEST/CD/1_FASTQC does not e...', 0) called at ../Modules/toolbox.pm line 142
+	toolbox::existsDir('/scratch/tranchant/DATA-TEST/CD/1_FASTQC') called at ../Modules/toolbox.pm line 155
+	toolbox::makeDir('/scratch/tranchant/DATA-TEST/CD/1_FASTQC', 1) called at NGS.pl line 135
+
+
+<---->An Error Occured!!<---->
+
+	Directory /scratch/tranchant/DATA-TEST/CD/1_FASTQC does not exist : Aucun fichier ou dossier de ce type 
+
+Bye...
+
+###### commande: NGS.pl -d /scratch/tranchant/DATA-TEST/CD/ -c software.config.txt -a adaptator.txt  
+
+###### INITIALIZATION STEP
+
+## REPERTOIRE DE DONNEES: /scratch/tranchant/DATA-TEST/CD/
+$VAR1 = {
+          '@HWUSI-EAS454_0006:1:14:8899:2315#ATCACG' => {
+                                                          'forward' => '/scratch/tranchant/DATA-TEST/CD//RC1_1.fastq',
+                                                          'reverse' => '/scratch/tranchant/DATA-TEST/CD//RC1_2.fastq'
+                                                        }
+        };
+
+## FICHIER ADAPTATEUR: adaptator.txt
+
+###### OUTPUT DIRECTORY CREATION
+Uncaught exception from user code:
+	
+	Bye...
+	toolbox::exportLog('Directory /scratch/tranchant/DATA-TEST/CD/1_FASTQC does not e...', 0) called at ../Modules/toolbox.pm line 142
+	toolbox::existsDir('/scratch/tranchant/DATA-TEST/CD/1_FASTQC') called at ../Modules/toolbox.pm line 155
+	toolbox::makeDir('/scratch/tranchant/DATA-TEST/CD/1_FASTQC', 1) called at NGS.pl line 135
+
+
+<---->An Error Occured!!<---->
+
+	Directory /scratch/tranchant/DATA-TEST/CD/1_FASTQC does not exist : Aucun fichier ou dossier de ce type 
+
+Bye...
+$VAR1 = {
+          '@HWUSI-EAS454_0001:1:1:15:303#0' => {
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/single.fastq'
+                                               },
+          '@CJP75M1:362:C20PVACXX:7:1101:1496:2086' => {
+                                                         'forward' => '../DATA-TEST/Files_for_pairing_test/first_forward.fastq',
+                                                         'reverse' => '../DATA-TEST/Files_for_pairing_test/first_reverse.fastq'
+                                                       },
+          '@HWUSI-EAS454_0001:1:1:15:301#0' => {
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward.fastq',
+                                                 'reverse' => '../DATA-TEST/Files_for_pairing_test/second_reverse.fastq'
+                                               }
+        };
+2 pairs were recovered (4 sequences), and 1 were extracted.
+
+ The command you gave me is: date +%D >> log.txt 
+ 
+03/26/14
+: /usr/local/cutadapt-1.2.1/bin/cutadapt  -b AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT -b AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCGTGATGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGATGTATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATACATCGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTTAGGCATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGCCTAAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTGACCAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTGGTCAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACACAGTGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCACTGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATATTGGCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCAGATCATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGATCTGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACACTTGAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTCAAGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGATCAGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCTGATCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTAGCTTATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATAAGCTAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGCTACATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGTAGCCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTACAAGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -q 20 -O 10 -m 35  ../DATA-TEST/RC1_1.fastq -o ../DATA-TEST/RC1_1.CUTADAPT.fastq
+
+ The command you gave me is: /usr/local/cutadapt-1.2.1/bin/cutadapt  -b AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT -b AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCGTGATGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGATGTATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATACATCGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTTAGGCATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGCCTAAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTGACCAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTGGTCAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACACAGTGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCACTGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATATTGGCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCAGATCATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGATCTGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACACTTGAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTCAAGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGATCAGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCTGATCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTAGCTTATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATAAGCTAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGCTACATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGTAGCCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTACAAGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -q 20 -O 10 -m 35  ../DATA-TEST/RC1_1.fastq -o ../DATA-TEST/RC1_1.CUTADAPT.fastq 
+ 
+cutadapt version 1.2.1
+Command line parameters: -b AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT -b AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCGTGATGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGATGTATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATACATCGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTTAGGCATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGCCTAAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTGACCAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTGGTCAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACACAGTGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCACTGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATATTGGCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCAGATCATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGATCTGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACACTTGAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTCAAGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGATCAGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCTGATCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTAGCTTATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATAAGCTAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGCTACATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGTAGCCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTACAAGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -q 20 -O 10 -m 35 ../DATA-TEST/RC1_1.fastq -o ../DATA-TEST/RC1_1.CUTADAPT.fastq
+Maximum error rate: 10.00%
+   No. of adapters: 26
+   Processed reads:         1226
+   Processed bases:        93176 bp (0.1 Mbp)
+     Trimmed reads:            1 (0.1%)
+   Quality-trimmed:            0 bp (0.0 Mbp) (0.00% of total)
+     Trimmed bases:            9 bp (0.0 Mbp) (0.01% of total)
+   Too short reads:            0 (0.0% of processed reads)
+    Too long reads:            0 (0.0% of processed reads)
+        Total time:      0.67 s
+     Time per read:      0.55 ms
+
+=== Adapter 1 ===
+
+Adapter 'AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT', length 58, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-58 bp: 5
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 2 ===
+
+Adapter 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT', length 58, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-58 bp: 5
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 3 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 1 times.
+0 times, it overlapped the 5' end of a read
+1 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+9	1	0.0	0
+
+=== Adapter 4 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATCGTGATGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 5 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGATGTATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 6 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATACATCGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 7 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACTTAGGCATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 8 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATGCCTAAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 9 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACTGACCAATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 10 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATTGGTCAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 11 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACACAGTGATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 12 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATCACTGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 13 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 14 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATATTGGCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 15 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACCAGATCATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 16 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATGATCTGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 17 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACACTTGAATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 18 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATTCAAGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 19 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACGATCAGATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 20 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATCTGATCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 21 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACTAGCTTATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 22 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATAAGCTAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 23 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGCTACATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 24 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATGTAGCCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 25 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 26 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATTACAAGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+: /usr/local/cutadapt-1.2.1/bin/cutadapt  -b AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT -b AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCGTGATGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGATGTATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATACATCGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTTAGGCATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGCCTAAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTGACCAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTGGTCAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACACAGTGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCACTGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATATTGGCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCAGATCATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGATCTGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACACTTGAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTCAAGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGATCAGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCTGATCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTAGCTTATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATAAGCTAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGCTACATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGTAGCCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTACAAGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -q 20 -O 10 -m 35  ../DATA-TEST/RC1_1.fastq -o ../DATA-TEST/RC1_1.CUTADAPT.fastq
+
+ The command you gave me is: /usr/local/cutadapt-1.2.1/bin/cutadapt  -b AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT -b AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCGTGATGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGATGTATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATACATCGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTTAGGCATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGCCTAAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTGACCAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTGGTCAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACACAGTGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCACTGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATATTGGCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCAGATCATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGATCTGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACACTTGAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTCAAGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGATCAGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCTGATCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTAGCTTATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATAAGCTAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGCTACATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGTAGCCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTACAAGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -q 20 -O 10 -m 35  ../DATA-TEST/RC1_1.fastq -o ../DATA-TEST/RC1_1.CUTADAPT.fastq 
+ 
+cutadapt version 1.2.1
+Command line parameters: -b AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT -b AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCGTGATGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGATGTATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATACATCGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTTAGGCATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGCCTAAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTGACCAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTGGTCAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACACAGTGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCACTGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATATTGGCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCAGATCATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGATCTGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACACTTGAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTCAAGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGATCAGATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATCTGATCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACTAGCTTATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATAAGCTAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGCTACATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATGTAGCCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -b GATCGGAAGAGCACACGTCTGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG -b CAAGCAGAAGACGGCATACGAGATTACAAGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC -q 20 -O 10 -m 35 ../DATA-TEST/RC1_1.fastq -o ../DATA-TEST/RC1_1.CUTADAPT.fastq
+Maximum error rate: 10.00%
+   No. of adapters: 26
+   Processed reads:         1226
+   Processed bases:        93176 bp (0.1 Mbp)
+     Trimmed reads:            1 (0.1%)
+   Quality-trimmed:            0 bp (0.0 Mbp) (0.00% of total)
+     Trimmed bases:            9 bp (0.0 Mbp) (0.01% of total)
+   Too short reads:            0 (0.0% of processed reads)
+    Too long reads:            0 (0.0% of processed reads)
+        Total time:      0.68 s
+     Time per read:      0.55 ms
+
+=== Adapter 1 ===
+
+Adapter 'AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT', length 58, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-58 bp: 5
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 2 ===
+
+Adapter 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT', length 58, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-58 bp: 5
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 3 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 1 times.
+0 times, it overlapped the 5' end of a read
+1 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+9	1	0.0	0
+
+=== Adapter 4 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATCGTGATGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 5 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACCGATGTATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 6 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATACATCGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 7 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACTTAGGCATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 8 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATGCCTAAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 9 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACTGACCAATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 10 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATTGGTCAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 11 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACACAGTGATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 12 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATCACTGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 13 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 14 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATATTGGCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 15 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACCAGATCATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 16 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATGATCTGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 17 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACACTTGAATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 18 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATTCAAGTGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 19 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACGATCAGATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 20 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATCTGATCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 21 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACTAGCTTATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 22 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATAAGCTAGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 23 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGCTACATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 24 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATGTAGCCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 25 ===
+
+Adapter 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+=== Adapter 26 ===
+
+Adapter 'CAAGCAGAAGACGGCATACGAGATTACAAGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC', length 63, was trimmed 0 times.
+0 times, it overlapped the 5' end of a read
+0 times, it overlapped the 3' end or was within the read
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+
+Lengths of removed sequences (5')
+length	count	expected	max. errors
+
+
+Lengths of removed sequences (3' or within)
+length	count	expected	max. errors
+
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/first_forward.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/first_reverse.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq <- is a FASTQ file, go on 
+
+
+<---->An Error Occured!!<---->
+
+	The ID infos line is not present, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	The "+" line, header of quality line is not present, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	checkFormatFastq not ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/single.fastq <- is a FASTQ file, go on 
+$VAR1 = {
+          '@HWUSI-EAS454_0001:1:1:15:303#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/single',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/single.fastq'
+                                               },
+          '@CJP75M1:362:C20PVACXX:7:1101:1496:2086' => {
+                                                         'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/first_forward',
+                                                         'forward' => '../DATA-TEST/Files_for_pairing_test/first_forward.fastq',
+                                                         'reverse' => '../DATA-TEST/Files_for_pairing_test/first_reverse.fastq'
+                                                       },
+          '@HWUSI-EAS454_0001:1:1:15:911#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/second_forward_single',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq'
+                                               },
+          '@HWUSI-EAS454_0001:1:1:15:301#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/second_forward',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward.fastq'
+                                               }
+        };
+2 pairs were recovered (4 sequences), and 1 were extracted.
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/first_forward.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/first_reverse.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq <- is a FASTQ file, go on 
+
+
+<---->An Error Occured!!<---->
+
+	The ID infos line is not present, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	The "+" line, header of quality line is not present, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	checkFormatFastq not ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse_reverseRepaired.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/single.fastq <- is a FASTQ file, go on 
+$VAR1 = {
+          '@HWUSI-EAS454_0001:1:1:15:303#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/single',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/single.fastq'
+                                               },
+          '@CJP75M1:362:C20PVACXX:7:1101:1496:2086' => {
+                                                         'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/first_forward',
+                                                         'forward' => '../DATA-TEST/Files_for_pairing_test/first_forward.fastq',
+                                                         'reverse' => '../DATA-TEST/Files_for_pairing_test/first_reverse.fastq'
+                                                       },
+          '@HWUSI-EAS454_0001:1:1:15:911#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/second_forward_single',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq'
+                                               },
+          '@HWUSI-EAS454_0001:1:1:15:301#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired.fastq',
+                                                 'reverse' => '../DATA-TEST/Files_for_pairing_test/second_reverse_reverseRepaired.fastq'
+                                               }
+        };
+2 pairs were recovered (4 sequences), and 1 were extracted.
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/first_forward.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/first_reverse.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq <- is a FASTQ file, go on 
+
+
+<---->An Error Occured!!<---->
+
+	The ID infos line is not present, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	The "+" line, header of quality line is not present, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	checkFormatFastq not ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse_reverseRepaired.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/single.fastq <- is a FASTQ file, go on 
+$VAR1 = {
+          '@HWUSI-EAS454_0001:1:1:15:303#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/single',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/single.fastq'
+                                               },
+          '@CJP75M1:362:C20PVACXX:7:1101:1496:2086' => {
+                                                         'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/first_forward',
+                                                         'forward' => '../DATA-TEST/Files_for_pairing_test/first_forward.fastq',
+                                                         'reverse' => '../DATA-TEST/Files_for_pairing_test/first_reverse.fastq'
+                                                       },
+          '@HWUSI-EAS454_0001:1:1:15:911#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/second_forward_single',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq'
+                                               },
+          '@HWUSI-EAS454_0001:1:1:15:301#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired.fastq',
+                                                 'reverse' => '../DATA-TEST/Files_for_pairing_test/second_reverse_reverseRepaired.fastq'
+                                               }
+        };
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/first_forward.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/first_reverse.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq <- is a FASTQ file, go on 
+
+
+<---->An Error Occured!!<---->
+
+	The ID infos line is not present, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	The "+" line, header of quality line is not present, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	checkFormatFastq not ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse_reverseRepaired.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/single.fastq <- is a FASTQ file, go on 
+$VAR1 = {
+          '@HWUSI-EAS454_0001:1:1:15:303#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/single',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/single.fastq'
+                                               },
+          '@CJP75M1:362:C20PVACXX:7:1101:1496:2086' => {
+                                                         'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/first_forward',
+                                                         'forward' => '../DATA-TEST/Files_for_pairing_test/first_forward.fastq',
+                                                         'reverse' => '../DATA-TEST/Files_for_pairing_test/first_reverse.fastq'
+                                                       },
+          '@HWUSI-EAS454_0001:1:1:15:911#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/second_forward_single',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq'
+                                               },
+          '@HWUSI-EAS454_0001:1:1:15:301#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired.fastq',
+                                                 'reverse' => '../DATA-TEST/Files_for_pairing_test/second_reverse_reverseRepaired.fastq'
+                                               }
+        };
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/first_forward.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/first_reverse.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq <- is a FASTQ file, go on 
+
+
+<---->An Error Occured!!<---->
+
+	The ID infos line is not present, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	The "+" line, header of quality line is not present, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	checkFormatFastq not ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse_reverseRepaired.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/single.fastq <- is a FASTQ file, go on 
+$VAR1 = {
+          '@HWUSI-EAS454_0001:1:1:15:303#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/single',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/single.fastq'
+                                               },
+          '@CJP75M1:362:C20PVACXX:7:1101:1496:2086' => {
+                                                         'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/first_forward',
+                                                         'forward' => '../DATA-TEST/Files_for_pairing_test/first_forward.fastq',
+                                                         'reverse' => '../DATA-TEST/Files_for_pairing_test/first_reverse.fastq'
+                                                       },
+          '@HWUSI-EAS454_0001:1:1:15:911#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/second_forward_single',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq'
+                                               },
+          '@HWUSI-EAS454_0001:1:1:15:301#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired.fastq',
+                                                 'reverse' => '../DATA-TEST/Files_for_pairing_test/second_reverse_reverseRepaired.fastq'
+                                               }
+        };
+2 pairs were recovered (4 sequences), and 1 were extracted.
+
+ The command you gave me is: /usr/bin/bwa index  -a is  ../DATA/Reference.fasta 
+ 
+Can't exec "/usr/bin/bwa": Aucun fichier ou dossier de ce type at ../Modules//toolbox.pm line 294.
+Use of uninitialized value $logLines in print at ../Modules//toolbox.pm line 41.
+
+
+<---->An Error Occured!!<---->
+
+	
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	bwaIndex failed! Check your parameters and line aboves 
+
+Bye...
+
+ The command you gave me is: /usr/bin/bwa aln  -f HASH(0x13c4410) ../DATA/Reference.fasta ../DATA/RC1_1.fastq 
+ 
+sh: -c: line 0: Erreur de syntaxe près du symbole inattendu « ( »
+sh: -c: line 0: `/usr/bin/bwa aln  -f HASH(0x13c4410) ../DATA/Reference.fasta ../DATA/RC1_1.fastq '
+
+
+<---->An Error Occured!!<---->
+
+	
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	bwaAln failed! Check your parameters and line aboves 
+
+Bye...
+
+ The command you gave me is: /usr/bin/bwa aln  -f HASH(0x13c4410) ../DATA/Reference.fasta ../DATA/RC1_2.fastq 
+ 
+sh: -c: line 0: Erreur de syntaxe près du symbole inattendu « ( »
+sh: -c: line 0: `/usr/bin/bwa aln  -f HASH(0x13c4410) ../DATA/Reference.fasta ../DATA/RC1_2.fastq '
+
+
+<---->An Error Occured!!<---->
+
+	
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	bwaAln failed! Check your parameters and line aboves 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	 ../DATA/RC1_1.sai does not exists or it's not a file, cannot test read ! 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	bwaSampe failed! Check your parameters and lines above 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	 ../DATA/RC1_1.sai does not exists or it's not a file, cannot test read ! 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	bwaSamse failed! Check your parameters and lines above 
+
+Bye...
+
+ The command you gave me is: /usr/bin/bwa index  -a is  ../DATA/Reference.fasta 
+ 
+Can't exec "/usr/bin/bwa": Aucun fichier ou dossier de ce type at ../Modules//toolbox.pm line 294.
+Use of uninitialized value $logLines in print at ../Modules//toolbox.pm line 41.
+
+
+<---->An Error Occured!!<---->
+
+	
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	bwaIndex failed! Check your parameters and line aboves 
+
+Bye...
+
+ The command you gave me is: /usr/bin/bwa aln  -f HASH(0x1b1d300) ../DATA/Reference.fasta ../DATA/RC1_1.fastq 
+ 
+sh: -c: line 0: Erreur de syntaxe près du symbole inattendu « ( »
+sh: -c: line 0: `/usr/bin/bwa aln  -f HASH(0x1b1d300) ../DATA/Reference.fasta ../DATA/RC1_1.fastq '
+
+
+<---->An Error Occured!!<---->
+
+	
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	bwaAln failed! Check your parameters and line aboves 
+
+Bye...
+
+ The command you gave me is: /usr/bin/bwa aln  -f HASH(0x1b1d300) ../DATA/Reference.fasta ../DATA/RC1_2.fastq 
+ 
+sh: -c: line 0: Erreur de syntaxe près du symbole inattendu « ( »
+sh: -c: line 0: `/usr/bin/bwa aln  -f HASH(0x1b1d300) ../DATA/Reference.fasta ../DATA/RC1_2.fastq '
+
+
+<---->An Error Occured!!<---->
+
+	
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	bwaAln failed! Check your parameters and line aboves 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	 ../DATA/RC1_1.sai does not exists or it's not a file, cannot test read ! 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	bwaSampe failed! Check your parameters and lines above 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	 ../DATA/RC1_1.sai does not exists or it's not a file, cannot test read ! 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	bwaSamse failed! Check your parameters and lines above 
+
+Bye...

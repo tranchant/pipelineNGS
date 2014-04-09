@@ -1,0 +1,18 @@
+#Config file
+# True comments with "#"
+#Program name code by $NAME
+#under the program name (empty lines do not count), the option are symbolized by key=value (ex n=5) or key alone (ex m)
+
+#first program config
+
+$samtoolsView
+-F=0x04
+-h
+-b
+
+#2nd program config
+
+$BWA
+-e=5
+-n=4
+

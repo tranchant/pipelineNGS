@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/bioinfo/NGS_Pipeline/!svn/ver/201/Modules
+END
+cufflinks.pm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/bioinfo/NGS_Pipeline/!svn/ver/188/Modules/cufflinks.pm
+END
+cutadapt.pm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/bioinfo/NGS_Pipeline/!svn/ver/178/Modules/cutadapt.pm
+END
+gatk.pm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/bioinfo/NGS_Pipeline/!svn/ver/201/Modules/gatk.pm
+END
+toolbox.pm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/bioinfo/NGS_Pipeline/!svn/ver/200/Modules/toolbox.pm
+END
+bwa.pm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/bioinfo/NGS_Pipeline/!svn/ver/177/Modules/bwa.pm
+END
+pairing.pm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/bioinfo/NGS_Pipeline/!svn/ver/178/Modules/pairing.pm
+END
+fastq_utils.pm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/bioinfo/NGS_Pipeline/!svn/ver/192/Modules/fastq_utils.pm
+END
+local_config.pm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/bioinfo/NGS_Pipeline/!svn/ver/16/Modules/local_config.pm
+END
+module_template.pm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/bioinfo/NGS_Pipeline/!svn/ver/2/Modules/module_template.pm
+END
+localConfig.pm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/bioinfo/NGS_Pipeline/!svn/ver/187/Modules/localConfig.pm
+END
+fastqc.pm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/bioinfo/NGS_Pipeline/!svn/ver/195/Modules/fastqc.pm
+END
+samTools.pm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/bioinfo/NGS_Pipeline/!svn/ver/199/Modules/samTools.pm
+END
+picardTools.pm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/bioinfo/NGS_Pipeline/!svn/ver/198/Modules/picardTools.pm
+END

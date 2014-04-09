@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/bioinfo/NGS_Pipeline/!svn/ver/79/DATA
+END
+RC1_1.fastq
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/bioinfo/NGS_Pipeline/!svn/ver/1/DATA/RC1_1.fastq
+END
+config_file.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/bioinfo/NGS_Pipeline/!svn/ver/58/DATA/config_file.txt
+END
+RC1_2.fastq
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/bioinfo/NGS_Pipeline/!svn/ver/1/DATA/RC1_2.fastq
+END
+Reference.fasta
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/bioinfo/NGS_Pipeline/!svn/ver/1/DATA/Reference.fasta
+END
+software.config.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/bioinfo/NGS_Pipeline/!svn/ver/1/DATA/software.config.txt
+END

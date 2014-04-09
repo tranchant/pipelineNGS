@@ -1,0 +1,84 @@
+
+
+<---->An Error Occured!!<---->
+
+	 software.config.txt does not exists or it's not a file, cannot test 1 ! 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	 software.config.txt does not exists or it's not a file, cannot test read ! 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	 software.config.txt does not exists or it's not a file, cannot test read ! 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	 software.config.txt does not exists or it's not a file, cannot test read ! 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	Directory ../DATA does not exist : Aucun fichier ou dossier de ce type 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	Unable to create directory ../TEST/test_dir Aucun fichier ou dossier de ce type 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	 software.config.txt does not exists or it's not a file, cannot test 1 ! 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	 software.config.txt does not exists or it's not a file, cannot test read ! 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	 software.config.txt does not exists or it's not a file, cannot test read ! 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	 software.config.txt does not exists or it's not a file, cannot test read ! 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	Directory ../DATA does not exist : Aucun fichier ou dossier de ce type 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	Unable to create directory ../TEST/test_dir Aucun fichier ou dossier de ce type 
+
+Bye...

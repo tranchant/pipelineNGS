@@ -1,0 +1,2 @@
+1226 pairs were recovered (2452 sequences), and 0 were extracted.
+1224 pairs were recovered (2448 sequences), and 2 were extracted.
