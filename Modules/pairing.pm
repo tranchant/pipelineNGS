@@ -74,7 +74,7 @@ sub pairRecognition {
 
 #From a hash (reference to) of paired sequences, will constrct and organize couples in separated folders, named with their RG.
 sub createDirPerCouple {
-    my ($hashOfPairs)=@_;
+    my ($hashOfPairs,$targetDirectory)=@_;
     my @listOfSequences = keys %{$hashOfPairs}; #Pick up the names of first sequences (key values of the reference)
     foreach my $couple (@listOfSequences)
     {
@@ -88,6 +88,7 @@ sub createDirPerCouple {
 	$reverseFile=$hashOfPairs->{$couple}{"reverse"} if exists $hashOfPairs->{$couple}{"reverse"}; #Reverse may not exists
 	
 	my $ReadGroup=$hashOfPairs->{$couple}{"ReadGroup"};
+	$ReadGroup=$targetDirectory."/".$ReadGroup;
 	#
 	#   
 	#    #Creating subfolder based on ReadGroup name
