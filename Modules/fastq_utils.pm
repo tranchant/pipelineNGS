@@ -40,28 +40,6 @@ sub fastqcToHash { #Parse fastqc file header and return a hash
 #Sequence count
 #########################################
 
-sub checkNumber{ #Check the number of line, using FASTQ or wc -l
-    my ($variable)=@_;
-    my $variableType=ref($variable); #check if $variable is a scalaire (name of a file) of a ref to an hash (FASTQC output). return 0 if scalar
-    
-    my $returnValue;
-    #If $variable is a file name
-    if ($variableType == 0) {
-        $returnValue=checkNumberByWC($variable); #Will use the ASCII value of the 1st sequence to test quality type
-    }
-    #If $variable is a Hash reference
-    elsif ($variableType == 1){
-        $returnValue=checkNumberByFASTQC($variable);
-    }
-    #return
-    
-    my $logInfo="The reads number is of ".$returnValue."\n";
-    toolbox::exportLog($logInfo,1);
-    
-    return $returnValue;
-    }
-
-
 sub checkNumberByWC { #check the sequences number using the wc -l command from bash
     my ($fileName)=@_;
     my $nbLineCommand="wc -l ".$fileName; #Count the line number
@@ -90,24 +68,6 @@ sub checkNumberByFASTQC{ #use the FASTQC reporting hash from the Fastqc module
 #########################################
 # Encode check
 #########################################
-
-sub checkEncode { #check if the format is PHRED33 using either the FASTQC report of the data::format library
-    my ($variable)=@_;
-    my $variableType=ref($variable); #check if $variable is a scalaire (name of a file) of a ref to an hash (FASTQC output). return 0 if scalar
-    
-    my $returnValue;
-    #If $variable is a file name
-    if ($variableType == 0) {
-        $returnValue=checkEncodeByASCIIcontrol($variable); #Will use the ASCII value of the 1st sequence to test quality type
-    }
-    #If $variable is a Hash reference
-    elsif ($variableType == 1){
-        $returnValue=checkEncodeByFASTQC($variable);
-    }
-    #return
-    return $returnValue;
-    
-}
 
 sub checkEncodeByASCIIcontrol { #Check if the FASTQ format of a given file is PHRED33. Here or in a specific FASTQ module ? 
     my ($fileName)=@_;
