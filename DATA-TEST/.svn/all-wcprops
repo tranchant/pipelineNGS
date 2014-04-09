@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/bioinfo/NGS_Pipeline/!svn/ver/159/DATA-TEST
+END
+adaptators.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/bioinfo/NGS_Pipeline/!svn/ver/110/DATA-TEST/adaptators.txt
+END
+RC1_1.fastq
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/bioinfo/NGS_Pipeline/!svn/ver/6/DATA-TEST/RC1_1.fastq
+END
+second_reverse.fastq
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/bioinfo/NGS_Pipeline/!svn/ver/43/DATA-TEST/second_reverse.fastq
+END
+RC1_2.fastq
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/bioinfo/NGS_Pipeline/!svn/ver/6/DATA-TEST/RC1_2.fastq
+END
+RC1_1.CUTADAPT.fastq
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/bioinfo/NGS_Pipeline/!svn/ver/6/DATA-TEST/RC1_1.CUTADAPT.fastq
+END
+RC1_2.CUTADAPT.fastq
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/bioinfo/NGS_Pipeline/!svn/ver/6/DATA-TEST/RC1_2.CUTADAPT.fastq
+END
+first_forward.fastq
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/bioinfo/NGS_Pipeline/!svn/ver/43/DATA-TEST/first_forward.fastq
+END
+cutadapt.conf
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/bioinfo/NGS_Pipeline/!svn/ver/159/DATA-TEST/cutadapt.conf
+END
+fastqc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/bioinfo/NGS_Pipeline/!svn/ver/6/DATA-TEST/fastqc.sh
+END
+single.fastq
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/bioinfo/NGS_Pipeline/!svn/ver/43/DATA-TEST/single.fastq
+END
+first_reverse.fastq
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/bioinfo/NGS_Pipeline/!svn/ver/43/DATA-TEST/first_reverse.fastq
+END
+RC1_1_fastqc.zip
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/bioinfo/NGS_Pipeline/!svn/ver/6/DATA-TEST/RC1_1_fastqc.zip
+END
+RC1_2_fastqc.zip
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/bioinfo/NGS_Pipeline/!svn/ver/6/DATA-TEST/RC1_2_fastqc.zip
+END
+second_forward.fastq
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/bioinfo/NGS_Pipeline/!svn/ver/43/DATA-TEST/second_forward.fastq
+END
+cutadapt.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/bioinfo/NGS_Pipeline/!svn/ver/6/DATA-TEST/cutadapt.sh
+END

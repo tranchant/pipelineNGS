@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/bioinfo/NGS_Pipeline/!svn/ver/6/DATA-TEST/RC1_1_fastqc
+END
+fastqc_report.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/bioinfo/NGS_Pipeline/!svn/ver/6/DATA-TEST/RC1_1_fastqc/fastqc_report.html
+END
+fastqc_data.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/bioinfo/NGS_Pipeline/!svn/ver/6/DATA-TEST/RC1_1_fastqc/fastqc_data.txt
+END
+summary.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/bioinfo/NGS_Pipeline/!svn/ver/6/DATA-TEST/RC1_1_fastqc/summary.txt
+END
