@@ -6,7 +6,12 @@ use lib qw(.);
 use localConfig;
 use toolbox;
 use Data::Dumper;
+<<<<<<< 3cb241fb73b0a50b3a83176a6983be2d47a28af7
 
+=======
+################################### coucou ^^
+###################### test conflit #######################
+>>>>>>> 81929147fa9f5f33a32c6d7dae43ee41246ff995
 ##BWA
 ##Module containing BWA functions
 ##############################################
