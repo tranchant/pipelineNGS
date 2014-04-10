@@ -11,7 +11,7 @@ use Data::Dumper;
 ##BWA
 ##Module containing BWA functions
 ##############################################
-##
+## Beurk!!!!!!!
 ##
 ##BWA INDEX
 #Index database sequences in the FASTA format.
