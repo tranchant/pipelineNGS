@@ -1,4 +1,4 @@
-# CUFFLINKS MODULE #
+# CUFFLINKS MODULE BEUUUURRRRKKK LE RETOUR! #
 package cufflinks;
 
 use strict;
