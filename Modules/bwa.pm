@@ -6,8 +6,7 @@ use lib qw(.);
 use localConfig;
 use toolbox;
 use Data::Dumper;
-################################### coucou ^^
-##############################################
+
 ##BWA
 ##Module containing BWA functions
 ##############################################
