@@ -137,13 +137,21 @@ sub createDirPerCouple {
     return 1;
 }
 
+
+
+##################################################################################
+# pairing::repairing : From two de-paired files, forward + reverse, will create three files, forward, reverse and single
+#	in: forwardFile, reverseFile, directory (non obligatory)
+#	out: forwardFile, reverseFile, singleFile, logLocal
+##################################################################################
+#TODO (/?\ what's the difference between log and logLocal, if no difference, replace by the toolbox ::exportLog)
+##################################################################################
 # CHANGE 11-04-2014
 # Author : CD
 # Modification:
 # 	- Add a directory as argument. The three files generated will be created in this directory
 #	- Add Existence test and Creation of this directory
 #	- Change the name of the files generated
-#From two de-paired files, forward + reverse, will create three files, forward, reverse and single
 sub repairing
 {
     
@@ -154,7 +162,11 @@ sub repairing
     toolbox::existsDir($directory);    
     my $dirOut=defined($directory)?$directory.'/':'./';
 
-    #TODO : verifier checkFormatFastq
+    #Check Fastq format
+    toolbox::checkFormatFastq($forwardFile);
+    toolbox::checkFormatFastq($reverseFile);
+    
+    #TODO : proble de nomenclature du single à lier au read group et non au forward
     #Extraction of the name and creation of output names
     my $forwardTag = extractName($forwardFile);
     my $forwardFileOut=$dirOut.$forwardTag.".REPAIRING.fastq";
@@ -165,7 +177,6 @@ sub repairing
     my $singleFileOut=$dirOut.$forwardTag."_single.REPAIRING.fastq";
 
     
- 
     #Opening infiles
     open(FOR, "<", $forwardFile) or errorAndDie($!);
     open(REV, "<", $reverseFile) or errorAndDie($!);
