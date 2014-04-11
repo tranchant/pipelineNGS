@@ -207,8 +207,10 @@ sub repairing {#The repairer itself
     }
 
 sub extractName{#remove fastq from the name, and clean the name
-    my ($name)=@_;
-    chomp $name;
+    my ($file)=@_;
+    chomp $file; 
+    my @path=split /\//, $file;
+    my $name=$path[$#path]; 
     $name =~ s/\.\./\+\+/;#to workaround the next command if the way is in relatvie (eg ../DATA/file)
     my @listName=split /\./, $name;
     pop @listName;#removing last value, ie the format
