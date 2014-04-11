@@ -1678,3 +1678,100 @@ Bye...
 	bwaSamse failed! Check your parameters and lines above 
 
 Bye...
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/first_forward.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/first_reverse.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq <- is a FASTQ file, go on 
+
+
+<---->An Error Occured!!<---->
+
+	The ID infos line is not present, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	The "+" line, header of quality line is not present, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	checkFormatFastq not ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse_reverseRepaired.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/single.fastq <- is a FASTQ file, go on 
+$VAR1 = {
+          '@HWUSI-EAS454_0001:1:1:15:303#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/single',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/single.fastq'
+                                               },
+          '@CJP75M1:362:C20PVACXX:7:1101:1496:2086' => {
+                                                         'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/first_forward',
+                                                         'forward' => '../DATA-TEST/Files_for_pairing_test/first_forward.fastq',
+                                                         'reverse' => '../DATA-TEST/Files_for_pairing_test/first_reverse.fastq'
+                                                       },
+          '@HWUSI-EAS454_0001:1:1:15:911#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/second_forward_single',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq'
+                                               },
+          '@HWUSI-EAS454_0001:1:1:15:301#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired.fastq',
+                                                 'reverse' => '../DATA-TEST/Files_for_pairing_test/second_reverse_reverseRepaired.fastq'
+                                               }
+        };
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/first_forward.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/first_reverse.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq <- is a FASTQ file, go on 
+
+
+<---->An Error Occured!!<---->
+
+	The ID infos line is not present, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	The "+" line, header of quality line is not present, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+
+
+<---->An Error Occured!!<---->
+
+	checkFormatFastq not ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse.fastq <- is not a FASTQ file, please check your file 
+
+Bye...
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/second_reverse_reverseRepaired.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> ../DATA-TEST/Files_for_pairing_test/single.fastq <- is a FASTQ file, go on 
+$VAR1 = {
+          '@HWUSI-EAS454_0001:1:1:15:303#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/single',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/single.fastq'
+                                               },
+          '@CJP75M1:362:C20PVACXX:7:1101:1496:2086' => {
+                                                         'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/first_forward',
+                                                         'forward' => '../DATA-TEST/Files_for_pairing_test/first_forward.fastq',
+                                                         'reverse' => '../DATA-TEST/Files_for_pairing_test/first_reverse.fastq'
+                                                       },
+          '@HWUSI-EAS454_0001:1:1:15:911#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/second_forward_single',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq'
+                                               },
+          '@HWUSI-EAS454_0001:1:1:15:301#0' => {
+                                                 'ReadGroup' => '../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired',
+                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired.fastq',
+                                                 'reverse' => '../DATA-TEST/Files_for_pairing_test/second_reverse_reverseRepaired.fastq'
+                                               }
+        };
+2 pairs were recovered (4 sequences), and 1 were extracted.

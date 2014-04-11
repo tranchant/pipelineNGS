@@ -121,7 +121,7 @@ print STDERR Data::Dumper::Dumper(\%pairFile);  ########## A COMMENTER
 
 ## Test adaptator file existence
 toolbox::exportLog("\n## FICHIER ADAPTATEUR: $adaptatorFile\n",1);
-toolbox::existsFile($adaptatorFile,"check") and toolbox::readFile($adaptatorFile,"check");
+toolbox::existsFile($adaptatorFile) and toolbox::readFile($adaptatorFile,"check");
 
 
 

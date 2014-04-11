@@ -38,7 +38,7 @@ sub parse
 	toolbox::exportLog("\n## FASTQC PARSE STEP : ", 1);
 	toolbox::exportLog(" : $fastqcFile\n\n", 1);
 	
-	toolbox::existsFile($fastqcFile,"check");
+	toolbox::existsFile($fastqcFile);
 	
 	#########################################
 	#Exemple d'entete du fichier a parser

@@ -28,7 +28,7 @@ use_ok('toolbox');
 ########################################
 
 #existsFile
-is (toolbox::existsFile($configFile,1),'1','Ok for existsFile');
+is (toolbox::existsFile($configFile),'1','Ok for existsFile');
 
 #readFile test
 is (toolbox::readFile($configFile),'1','Ok for readFile');
