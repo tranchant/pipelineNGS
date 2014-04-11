@@ -13,7 +13,7 @@
 
 use strict;
 use warnings;
-use Test::More tests => 6; #Number of tests, to modify if new tests implemented. Can be changed as 'no_plan' instead of tests=>11 .
+use Test::More tests => 7; #Number of tests, to modify if new tests implemented. Can be changed as 'no_plan' instead of tests=>11 .
 use Data::Dumper;
 
 use lib qw(../Modules/);
@@ -59,6 +59,8 @@ is_deeply($expectedOutput,$observedoutput,'pairRecognition');
 #repairing ok
 ########################################
 my $testDir='../DATA-TEST/pairing.t-2/';
+toolbox::existsDir($testDir);
+
 #Check if running
 my $checkValue=pairing::repairing( '../DATA-TEST/pairing.t-1/second_forward.fastq','../DATA-TEST/pairing.t-1/second_reverse.fastq',$testDir);
 is ($checkValue,'1','repairing running');
@@ -77,4 +79,17 @@ is ($diffForward,'','repairing diff forward');
 my $diffReverse=`diff -q ../DATA-TEST/pairing.t-2/second_reverse-REPAIRED-TEST.fastq second_reverse_reverseRepaired.fastq`;
 is ($diffReverse,'','repairing diff reverse');
 
+#TODO: Ne pas mettre en dur le chemin, mettre la variable $testDir
 system("rm -Rf ../DATA-TEST/pairing.t-2/*REPAIRING*");
+
+########################################
+#createDirPerCouple
+########################################
+my $testDir3='../DATA-TEST/pairing.t-3/';
+toolbox::existsDir($testDir3);
+
+my $checkValue3=pairing::createDirPerCouple(pairing::pairRecognition($testDir3),'../DATA-TEST/pairing.t-tmp/');
+is ($checkValue3,1,'create directory per couple');
+
+system("cp ../DATA-TEST/pairing.t-1/* ../DATA-TEST/pairing.t-3/");
+#system("rm ../DATA-TEST/pairing.t-tmp/* -rf");
