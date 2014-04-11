@@ -11,7 +11,7 @@
 
 use strict;
 use warnings;
-use Test::More tests => 4; #Number of tests, to modify if new tests implemented. Can be changed as 'no_plan' instead of tests=>11 .
+use Test::More tests => 4; #Number of test s, to modify if new tests implemented. Can be changed as 'no_plan' instead of tests=>11 .
 use Data::Dumper;
 
 use lib qw(../Modules/);
