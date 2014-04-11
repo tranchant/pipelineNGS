@@ -67,20 +67,20 @@ is ($checkValue,'1','repairing running');
 
 #Check if working
 #my $numberOfLinesObserved=`wc -l ../DATA-TEST/pairing.t-2/second_SINGLE-REPAIRED-TEST.fastq`;
-my $numberOfLinesObserved=`wc -l second_forward_single.fastq`;
+my $numberOfLinesObserved=`wc -l $testDir/second_forward_single.REPAIRING.fastq`;
 chomp $numberOfLinesObserved;
-is ($numberOfLinesObserved,'4 second_forward_single.fastq','repairing line number');
+is ($numberOfLinesObserved,'4 '.$testDir.'/second_forward_single.REPAIRING.fastq','repairing line number');
 
 #Check if the files created are the same as planned
-my $diffForward=`diff -q ../DATA-TEST/pairing.t-2/second_forward-REPAIRED-TEST.fastq second_forward_forwardRepaired.fastq`;
+my $diffForward=`diff -q ../DATA-TEST/pairing.t-2/second_forward-REPAIRED-TEST.fastq ../DATA-TEST/pairing.t-2/second_forward.REPAIRING.fastq`;
 is ($diffForward,'','repairing diff forward');
 
 #Check if the files created are the same as planned
-my $diffReverse=`diff -q ../DATA-TEST/pairing.t-2/second_reverse-REPAIRED-TEST.fastq second_reverse_reverseRepaired.fastq`;
+my $diffReverse=`diff -q ../DATA-TEST/pairing.t-2/second_reverse-REPAIRED-TEST.fastq ../DATA-TEST/pairing.t-2/second_reverse.REPAIRING.fastq`;
 is ($diffReverse,'','repairing diff reverse');
 
 #TODO: Ne pas mettre en dur le chemin, mettre la variable $testDir
-system("rm -Rf ../DATA-TEST/pairing.t-2/*REPAIRING*");
+#system("rm -Rf ../DATA-TEST/pairing.t-2/*REPAIRING*");
 
 ########################################
 #createDirPerCouple
