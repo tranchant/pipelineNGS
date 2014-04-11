@@ -60,7 +60,6 @@ sub pairRecognition {
 	    next; # go to the next sequence
 	    }
 	
-	
 	#Fetching the first line to obtain the ID sequence
 	my $firstLineComplete=`head -n 1 $currentFile`; 
 	chomp $firstLineComplete;
@@ -138,28 +137,43 @@ sub createDirPerCouple {
     return 1;
 }
 
+# CHANGE 11-04-2014
+# Author : CD
+# Modification:
+# 	- Add a directory as argument. The three files generated will be created in this directory
+#	- Add Existence test and Creation of this directory
+#	- Change the name of the files generated
 #From two de-paired files, forward + reverse, will create three files, forward, reverse and single
-sub repairing {#The repairer itself
-    my($forward,$reverse)=@_;
+sub repairing
+{
     
+    die "WARNING! pairing::repairing should get at least two arguments!\n" if (@_ < 2);
+
+    my($forwardFile,$reverseFile,$directory)=@_;
+    
+    toolbox::existsDir($directory);    
+    my $dirOut=defined($directory)?$directory.'/':'./';
+
     #TODO : verifier checkFormatFastq
     #Extraction of the name and creation of output names
-    my $forwardOut = extractName($forward);
+    my $forwardTag = extractName($forwardFile);
+    my $forwardFileOut=$dirOut.$forwardTag.".REPAIRING.fastq";
     
-    my $singleOut=$forwardOut."_single.fastq";
-    $forwardOut .= "_forwardRepaired.fastq";
+    my $reverseTag= extractName($reverseFile);
+    my $reverseFileOut=$dirOut.$reverseTag.".REPAIRING.fastq";
+   
+    my $singleFileOut=$dirOut.$forwardTag."_single.REPAIRING.fastq";
+
     
-    my $reverseOut = extractName($reverse);
-    $reverseOut .= "_reverseRepaired.fastq";
-    
+ 
     #Opening infiles
-    open(FOR, "<", $forward) or errorAndDie($!);
-    open(REV, "<", $reverse) or errorAndDie($!);
+    open(FOR, "<", $forwardFile) or errorAndDie($!);
+    open(REV, "<", $reverseFile) or errorAndDie($!);
     
     #Opening outfiles
-    open(MATEF, ">",$forwardOut) or errorAndDie($!);
-    open(MATER, ">",$reverseOut) or errorAndDie($!);
-    open(SINGLE,">",$singleOut) or errorAndDie ($!);
+    open(MATEF, ">",$forwardFileOut) or errorAndDie($!);
+    open(MATER, ">",$reverseFileOut) or errorAndDie($!);
+    open(SINGLE,">",$singleFileOut) or errorAndDie ($!);
     
     #Creating counters
     my $pairedSequences=0;
