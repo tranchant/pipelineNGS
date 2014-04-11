@@ -58,9 +58,9 @@ is_deeply($expectedOutput,$observedoutput,'pairRecognition');
 ########################################
 #repairing ok
 ########################################
-
+my $testDir='../DATA-TEST/pairing.t-2/';
 #Check if running
-my $checkValue=pairing::repairing( '../DATA-TEST/pairing.t-1/second_forward.fastq','../DATA-TEST/pairing.t-1/second_reverse.fastq');
+my $checkValue=pairing::repairing( '../DATA-TEST/pairing.t-1/second_forward.fastq','../DATA-TEST/pairing.t-1/second_reverse.fastq',$testDir);
 is ($checkValue,'1','repairing running');
 
 #Check if working
@@ -77,4 +77,4 @@ is ($diffForward,'','repairing diff forward');
 my $diffReverse=`diff -q ../DATA-TEST/pairing.t-2/second_reverse-REPAIRED-TEST.fastq second_reverse_reverseRepaired.fastq`;
 is ($diffReverse,'','repairing diff reverse');
 
-#system("rm -Rf ../DATA-TEST/Files_for_pairing_test/*Repaired*");
+system("rm -Rf ../DATA-TEST/pairing.t-2/*REPAIRING*");
