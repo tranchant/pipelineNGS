@@ -1,3 +1,13 @@
+###################################################################################################################################
+#
+# Licencied under CeCill-C (http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html) and GPLv3
+#
+# Intellectual property belongs to IRD, CIRAD and SouthGreen developpement plateform 
+# Written by Cécile Monat, Ayite Kougbeadjo, Mawusse Agbessi, Christine Tranchant, Marilyne Summo, Cédric Farcy, François Sabot
+#
+###################################################################################################################################
+
+
 package pairing;
 
 use strict;
@@ -41,7 +51,7 @@ sub pairRecognition {
     
     foreach my $currentFile (@listFiles)
 	{
-	    
+    
 	#check fastq format of the file
 	my $checkFastq=toolbox::checkFormatFastq($currentFile);
 	if ($checkFastq == 0)
@@ -52,14 +62,14 @@ sub pairRecognition {
 	
 	
 	#Fetching the first line to obtain the ID sequence
-	my $firstLineComplete=`head -n 1 $currentFile`;
+	my $firstLineComplete=`head -n 1 $currentFile`; 
 	chomp $firstLineComplete;
 
 	#Infos for the type of modification
 	my $namingConvention;
 	
 	#Removing the end of line
-	my $sequenceName=$firstLineComplete;
+	my $sequenceName=$firstLineComplete; 
 	$sequenceName =~ s/\/.$// and $namingConvention = 1; # ancienne convention /1 /2
 	$sequenceName =~ s/\s\d:\w:\d:\w{1,10}$// and $namingConvention = 2; # convention actuelle 1:N:A-Z]& to 10
 
@@ -75,14 +85,13 @@ sub pairRecognition {
 
 	#Completing the hash
 	$pairs{$sequenceName}{$nameOfStrand}=$currentFile;
-	
+
 	#Adding the ReadGroup in the hash for latter use
 	my $readGroupName=$pairs{$sequenceName}{"forward"} if (exists $pairs{$sequenceName}{"forward"})  ; #Picking up the forward name to generate the RG tag
 	$readGroupName=$pairs{$sequenceName}{"reverse"} unless $readGroupName;#If only reverse seq
 	$readGroupName=$pairs{$sequenceName}{"unknown"} unless $readGroupName;#if only unknown strand
 	$readGroupName = extractName($readGroupName);#Remove the .fastq from the name
 	$pairs{$sequenceName}{"ReadGroup"}=$readGroupName; #Adding the readGroup to the name
-	
 	}
     #Exporting log
     my $dumpCoupleList = Dumper(\%pairs);
