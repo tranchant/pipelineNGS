@@ -10,6 +10,26 @@ use toolbox;
 
 #Pair recognition: from a large set of files in a folder, will recognize forward, reverse and associate them.
 #A single file will be alone in its subhash, but can be named forward or reverse (generally forward)
+#$VAR1 = \{
+#            '@HWUSI-EAS454_0001:1:1:15:303#0' => {
+#                                                   'ReadGroup' => 'single',
+#                                                   'forward' => '../DATA-TEST/Files_for_pairing_test/single.fastq'
+#                                                 },
+#            '@CJP75M1:362:C20PVACXX:7:1101:1496:2086' => {
+#                                                           'ReadGroup' => 'first_forward',
+#                                                           'forward' => '../DATA-TEST/Files_for_pairing_test/first_forward.fastq',
+#                                                           'reverse' => '../DATA-TEST/Files_for_pairing_test/first_reverse.fastq'
+#                                                         },
+#            '@HWUSI-EAS454_0001:1:1:15:911#0' => {
+#                                                   'ReadGroup' => 'second_forward_single',
+#                                                   'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq'
+#                                                 },
+#            '@HWUSI-EAS454_0001:1:1:15:301#0' => {
+#                                                   'ReadGroup' => 'second_forward_forwardRepaired',
+#                                                   'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired.fastq',
+#                                                   'reverse' => '../DATA-TEST/Files_for_pairing_test/second_reverse_reverseRepaired.fastq'
+#                                                 }
+#          };
 sub pairRecognition {
     my ($folder)=@_;
     my %pairs;
