@@ -33,22 +33,22 @@ use pairing;
 ########################################
 my $expectedOutput={
           '@CJP75M1:362:C20PVACXX:7:1101:1496:2086' => {
-                                                         'ReadGroup' => 'first_forward',
-                                                         'forward' => '../DATA-TEST/pairing.t-1/first_forward.fastq',
-                                                         'reverse' => '../DATA-TEST/pairing.t-1/first_reverse.fastq'
+                                                         'ReadGroup' => 'IND1_1',
+                                                         'forward' => '../DATA-TEST/pairing.t-1/IND1_1.fastq',
+                                                         'reverse' => '../DATA-TEST/pairing.t-1/IND1_2.fastq'
                                                        },
           '@HWUSI-EAS454_0001:1:1:15:303#0' => {
-                                                    'ReadGroup' => 'single',
-                                                    'forward' => '../DATA-TEST/pairing.t-1/single.fastq'
+                                                    'ReadGroup' => 'IND3',
+                                                    'forward' => '../DATA-TEST/pairing.t-1/IND3.fastq'
                                                },
           '@HWUSI-EAS454_0001:1:1:15:301#0' => {
-                                                 'ReadGroup' => 'second_forward',
-                                                 'forward' => '../DATA-TEST/pairing.t-1/second_forward.fastq',
-                                                 'reverse' => '../DATA-TEST/pairing.t-1/second_reverse.fastq'
+                                                 'ReadGroup' => 'IND2_forward',
+                                                 'forward' => '../DATA-TEST/pairing.t-1/IND2_forward.fastq',
+                                                 'reverse' => '../DATA-TEST/pairing.t-1/IND2_reverse.fastq'
                                                },
           '@HWUSI-EAS454_0001:1:1:15:911#0' => {
-                                                   'ReadGroup' => 'second_forward_single',
-                                                   'forward' => '../DATA-TEST/pairing.t-1/second_forward_single.fastq'
+                                                   'ReadGroup' => 'IND4',
+                                                   'forward' => '../DATA-TEST/pairing.t-1/IND4.fastq'
                                                  }
         };
 
@@ -62,7 +62,7 @@ my $testDir='../DATA-TEST/pairing.t-2/';
 toolbox::existsDir($testDir);
 
 #Check if running
-my $checkValue=pairing::repairing( '../DATA-TEST/pairing.t-1/second_forward.fastq','../DATA-TEST/pairing.t-1/second_reverse.fastq',$testDir);
+my $checkValue=pairing::repairing( '../DATA-TEST/pairing.t-1/IND2_forward.fastq','../DATA-TEST/pairing.t-1/IND2_reverse.fastq',$testDir);
 is ($checkValue,'1','repairing running');
 
 #Check if working
@@ -91,5 +91,5 @@ toolbox::existsDir($testDir3);
 my $checkValue3=pairing::createDirPerCouple(pairing::pairRecognition($testDir3),'../DATA-TEST/pairing.t-tmp/');
 is ($checkValue3,1,'create directory per couple');
 
-system("cp ../DATA-TEST/pairing.t-1/* ../DATA-TEST/pairing.t-3/");
-#system("rm ../DATA-TEST/pairing.t-tmp/* -rf");
+system("cp ../DATA-TEST/pairing.t-4/* ../DATA-TEST/pairing.t-3/");
+system("rm ../DATA-TEST/pairing.t-tmp/* -rf");
