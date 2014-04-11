@@ -12,7 +12,7 @@
 
 use strict;
 use warnings;
-use Test::More 'no_plan'; #Number of tests, to modify if new tests implemented. Can be changed as 'no_plan' instead of tests=>11 .
+use Test::More tests => 6; #Number of tests, to modify if new tests implemented. Can be changed as 'no_plan' instead of tests=>11 .
 use Data::Dumper;
 
 use lib qw(../Modules/);
@@ -33,26 +33,25 @@ use pairing;
 my $expectedOutput={
           '@CJP75M1:362:C20PVACXX:7:1101:1496:2086' => {
                                                          'ReadGroup' => 'first_forward',
-                                                         'forward' => '../DATA-TEST/Files_for_pairing_test/first_forward.fastq',
-                                                         'reverse' => '../DATA-TEST/Files_for_pairing_test/first_reverse.fastq'
+                                                         'forward' => '../DATA-TEST/pairing.t-1/first_forward.fastq',
+                                                         'reverse' => '../DATA-TEST/pairing.t-1/first_reverse.fastq'
                                                        },
           '@HWUSI-EAS454_0001:1:1:15:303#0' => {
                                                     'ReadGroup' => 'single',
-                                                    'forward' => '../DATA-TEST/Files_for_pairing_test/single.fastq'
+                                                    'forward' => '../DATA-TEST/pairing.t-1/single.fastq'
                                                },
           '@HWUSI-EAS454_0001:1:1:15:301#0' => {
-                                                 'ReadGroup' => 'second_forward_forwardRepaired',
-                                                 'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_forwardRepaired.fastq',
-                                                 'reverse' => '../DATA-TEST/Files_for_pairing_test/second_reverse_reverseRepaired.fastq'
+                                                 'ReadGroup' => 'second_forward',
+                                                 'forward' => '../DATA-TEST/pairing.t-1/second_forward.fastq',
+                                                 'reverse' => '../DATA-TEST/pairing.t-1/second_reverse.fastq'
                                                },
           '@HWUSI-EAS454_0001:1:1:15:911#0' => {
                                                    'ReadGroup' => 'second_forward_single',
-                                                   'forward' => '../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq'
+                                                   'forward' => '../DATA-TEST/pairing.t-1/second_forward_single.fastq'
                                                  }
         };
 
-#print Dumper(\pairing::pairRecognition('../DATA-TEST/Files_for_pairing_test'));
-my $observedoutput=pairing::pairRecognition('../DATA-TEST/Files_for_pairing_test');
+my $observedoutput=pairing::pairRecognition('../DATA-TEST/pairing.t-1');
 is_deeply($expectedOutput,$observedoutput,'pairRecognition');
 
 ########################################
@@ -60,11 +59,21 @@ is_deeply($expectedOutput,$observedoutput,'pairRecognition');
 ########################################
 
 #Check if running
-#my $checkValue=pairing::repairing( '../DATA-TEST/Files_for_pairing_test/second_forward.fastq','../DATA-TEST/Files_for_pairing_test/second_reverse.fastq');
-#is ($checkValue,'1','repairing running');
+my $checkValue=pairing::repairing( '../DATA-TEST/pairing.t-1/second_forward.fastq','../DATA-TEST/pairing.t-1/second_reverse.fastq');
+is ($checkValue,'1','repairing running');
 
-##Check if working
-#my $numberOfLinesObserved=`wc -l ../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq`;
-#chomp $numberOfLinesObserved;
-#is ($numberOfLinesObserved,'4 ../DATA-TEST/Files_for_pairing_test/second_forward_single.fastq','repairing');
-#system("rm -Rf ../DATA-TEST/Files_for_pairing_test/*repaired*");
+#Check if working
+#my $numberOfLinesObserved=`wc -l ../DATA-TEST/pairing.t-2/second_SINGLE-REPAIRED-TEST.fastq`;
+my $numberOfLinesObserved=`wc -l second_forward_single.fastq`;
+chomp $numberOfLinesObserved;
+is ($numberOfLinesObserved,'4 second_forward_single.fastq','repairing line number');
+
+#Check if the files created are the same as planned
+my $diffForward=`diff -q ../DATA-TEST/pairing.t-2/second_forward-REPAIRED-TEST.fastq second_forward_forwardRepaired.fastq`;
+is ($diffForward,'','repairing diff forward');
+
+#Check if the files created are the same as planned
+my $diffReverse=`diff -q ../DATA-TEST/pairing.t-2/second_reverse-REPAIRED-TEST.fastq second_reverse_reverseRepaired.fastq`;
+is ($diffReverse,'','repairing diff reverse');
+
+#system("rm -Rf ../DATA-TEST/Files_for_pairing_test/*Repaired*");
