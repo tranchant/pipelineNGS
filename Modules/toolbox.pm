@@ -54,7 +54,7 @@ sub checkFile { #Check if a file exists, is readable/writable, and has something
     my ($file)=@_;
     
     #Check existence
-    my $existence = existsFile($file,"check");
+    my $existence = existsFile($file);
     if ($existence == 0) {#File does not exist
         return 0;
         }
@@ -95,7 +95,7 @@ sub checkFile { #Check if a file exists, is readable/writable, and has something
 
 sub readFile{ #Check if a file is readable
     my ($file)=@_;
-    existsFile($file,"read"); #Check if exists
+    existsFile($file); #Check if exists
     #File exists
     if (-r $file) {return 1;}
     else {return 0;}
@@ -115,15 +115,22 @@ sub sizeFile { #check if a file is not empty
     else {return 0;}    #file does not exists or has a size of 0
     }
 
-##### CD : ajout du test -T
+
+##################################################################################
+# toolbox::existFile : Check if the file exists
+#	in: fileToCheckIfExist
+#	out: log, boolean
+##################################################################################
+# CHANGE 11-04-2014 / CD : Remove argument $typeCheck 
+# CD : ajout du test -T
 sub existsFile { #Check if the file exists
     
-    my ($file,$typeCheck)=@_;
+    my ($file)=@_;
     if ((-e $file and -T $file) or (-e $file and -B $file))
     {return 1;} #file exists
     else {
         #file does not exists
-        my $logOut =" $file does not exists or it's not a file, cannot test $typeCheck ! \n";
+        my $logOut =" $file does not exists or it's not a file! \n";
         exportLog($logOut,0); #report an error to exportLog
         return 0;
         }
