@@ -103,14 +103,14 @@ sub readFile{ #Check if a file is readable
 
 sub writeFile { #check if a file is writable
     my ($file)=@_;
-    existsFile($file,"read"); #Check if exists
+    existsFile($file); #Check if exists
     if (! -w $file){return 1;}
     else {return 0};
     }
 
 sub sizeFile { #check if a file is not empty
     my ($file) = @_;
-    existsFile($file,"read"); #Check if exists
+    existsFile($file); #Check if exists
     if (-s $file) {return 1;}#File exists and is more than 0 bytes
     else {return 0;}    #file does not exists or has a size of 0
     }
