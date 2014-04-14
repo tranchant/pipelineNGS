@@ -58,7 +58,7 @@ sub createConfFile
 sub execution
 {
 
-	die "WARNING! cutadapt::execution should get exactly three arguments!\n" if (@_ <3 );		# Check if the number of arguments is good
+	die "WARNING! cutadapt::execution should get exactly three arguments!\n" if (@_ !=3 );		# Check if the number of arguments is good
    
 	my ($fileIn,$fileConf,$fileOut) =@_;								# recovery of arguments
 	print Dumper($fileOut);
