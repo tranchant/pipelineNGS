@@ -11,7 +11,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 6;
+use Test::More tests => 'no_plan';
 use lib qw(../Modules/);
 
 
