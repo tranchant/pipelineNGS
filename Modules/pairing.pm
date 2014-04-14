@@ -3,7 +3,7 @@
 # Licencied under CeCill-C (http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html) and GPLv3
 #
 # Intellectual property belongs to IRD, CIRAD and SouthGreen developpement plateform 
-# Written by Cécile Monat, Ayite Kougbeadjo, Mawusse Agbessi, Christine Tranchant, Marilyne Summo, Cédric Farcy, François Sabot
+# Written by Cécile Monat, Ayité Kougbeadjo, Mawusse Agbessi, Christine Tranchant, Marilyne Summo, Cédric Farcy, François Sabot
 #
 ###################################################################################################################################
 
