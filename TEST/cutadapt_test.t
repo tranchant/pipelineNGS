@@ -37,12 +37,12 @@ my $fileOut = "../DATA-TEST/RC1_1.CUTADAPT.fastq";                              
 ### Test of cutadapt::createConfFile ###
 my %optionsRef = ("-q" => "20","-O" => "10","-m" => "35");                                          # Ref for hash containing informations to put into the configuration file
 my $optionref = \%optionsRef;
-is ((cutadapt::createConfFile($fileAdaptator, $fileConf, $optionref)),0, 'cutadapt::createConfFile');
+#is ((cutadapt::createConfFile($fileAdaptator, $fileConf, $optionref)),0, 'cutadapt::createConfFile');
 ########################################
 
 
 ### Test of cutadapt::exec ###
-is ((cutadapt::execution($fileIn, $fileConf, $fileOut)),0, 'cutadapt::execution');
+#is ((cutadapt::execution($fileIn, $fileConf, $fileOut)),0, 'cutadapt::execution');
 ##############################
 
 exit;
