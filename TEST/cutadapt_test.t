@@ -11,7 +11,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 5;
+use Test::More tests => 6;
 use lib qw(../Modules/);
 
 
@@ -42,7 +42,7 @@ is ((cutadapt::createConfFile($fileAdaptator, $fileConf, $optionref)),1, 'cutada
 
 
 ### Test of cutadapt::exec ###
-#is ((cutadapt::execution($fileIn, $fileConf, $fileOut)),1, 'cutadapt::execution');
+is ((cutadapt::execution($fileIn, $fileConf, $fileOut)),1, 'cutadapt::execution');
 ##############################
 
 exit;
