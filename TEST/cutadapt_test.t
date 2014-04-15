@@ -42,7 +42,7 @@ is ((cutadapt::createConfFile($fileAdaptator, $fileConf, $optionref)),1, 'cutada
 
 
 ### Test of cutadapt::exec ###
-is ((cutadapt::execution($fileIn, $fileConf, $fileOut)),1, 'cutadapt::execution');
+is ((cutadapt::execution($fileIn, $fileConf)),1, 'cutadapt::execution'); #$fileOut
 ##############################
 
 exit;
