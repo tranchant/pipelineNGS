@@ -21,8 +21,6 @@ use toolbox;
 # Fonction to create the configuration file specific to cutadapt
 sub createConfFile
 {
-
-    # Check if the number of arguments is good
     
     my ($fileAdaptator, $fileConf, $optionref)=@_;							# recovery of arguments
     
