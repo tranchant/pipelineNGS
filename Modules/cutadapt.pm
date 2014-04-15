@@ -61,7 +61,7 @@ sub execution
 	die "WARNING! cutadapt::execution should get exactly three arguments!\n" if (@_ !=3 );		# Check if the number of arguments is good
    
 	my ($fileIn,$fileConf,$fileOut) =@_;								# recovery of arguments
-	print Dumper($fileOut);
+	#print Dumper($fileOut);
 
 	## Lancement de cutadapt        
         #2 > cutadapt.log;
@@ -73,7 +73,7 @@ sub execution
 	    chomp($_);
 	    $adaptors=$adaptors.$_." ";
 	}
-	print Dumper($adaptors);
+	#print Dumper($adaptors);
 	################################
 	
 	
