@@ -102,10 +102,7 @@ package I<cutadapt>
 This module regroups all the fonctions linked to cutadapt software https://code.google.com/p/cutadapt
 
 
-
-
-
-=head2 Fonctions
+=head2 FONCTIONS
 
 =over 4
 
@@ -128,7 +125,6 @@ Example:
 C<cutadapt::exec($fqFile,$cutadaptConf,$fastqCutadapt, $logFile) ;> 	
 
 
-
 =back
 
 =head1 AUTEUR
@@ -136,13 +132,3 @@ C<cutadapt::exec($fqFile,$cutadaptConf,$fastqCutadapt, $logFile) ;>
 Christine Tranchant-Dubreuil, UMR DIADE
 
 L<http://bioinfo.mpl.ird.fr/>
-
-=head1 VOIR AUSSI
-
-blablabla
-
-=cut
-
-#L<mon autre documentation |doc>
-
-#L<Retour en haut de page |/"NOM">
