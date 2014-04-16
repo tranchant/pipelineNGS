@@ -22,6 +22,11 @@ our $fastqc = "/usr/local/FastQC/fastqc";
 our $cufflinks = "/usr/local/cufflinks-2.1.1.Linux_x86_64";
 
 
+#PATH for Cufflinks bin on cluster
+our $bowtieIndex = "";
+our $tophat = "";
+
+
 #Path for pacBioToCa
 our $pacBioToCA = "/home/sabotf/sources/wgs/Linux-amd64/bin/pacBioToCA";
 
