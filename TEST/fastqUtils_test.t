@@ -21,14 +21,14 @@ use fastqUtils;
 
 #checkNumber test with a fastq file
 my $fastqFile='../DATA-TEST/RC1_1.fastq';
-my $count = fastqUtils::checkNumber($fastqFile);
-is ($count,'1226','Ok for checkNumber');
+#my $count = fastqUtils::checkNumber($fastqFile);
+#is ($count,'1226','Ok for checkNumber');
 
 #checkNumber test with a fastqc file
 my $fastqcFile='../DATA-TEST/RC1_1_fastqc/fastqc_data.txt';
 my %fastqcHash = fastqUtils::fastqcToHash($fastqcFile);
 
-$count = fastqUtils::checkNumber(%fastqcHash);
+my $count = fastqUtils::checkNumber(%fastqcHash);
 is ($count,'1226','Ok for checkNumberByFASTQC');
 
 #########################################
