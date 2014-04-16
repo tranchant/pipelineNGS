@@ -449,7 +449,7 @@ sub addInfoHeader
 
 sub checkSamOrBamFormat {
     
-    my ($samFile,$textToAdd)=@_;
+    my ($samFile)=@_;
     
     #Is the file sam of bam ? Requested for the -S option in samtools view
     my $inputOption;
