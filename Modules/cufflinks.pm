@@ -16,7 +16,7 @@ use Data::Dumper;
 ##Adding XStag
 ##XS tag is founded in bam file  coming from TopHat or Bowtie and not in other bam file such as Bwa
 sub addingXStag {
-    my ($file,$out,$workingdir) = @_;
+    my ($file,$out) = @_;
     if ($file !~ m/\.bam$/)
         {
         warn ("\n$file is not a BAM file in adding XS tag\n");
