@@ -21,16 +21,16 @@ sub indexRef
             { $prefixRef=$1;
             }
         
-    my $command= "$bowtieIndex   -f $FastaRef  $prefixRef ";
+        my $command= "$bowtieIndex   -f $FastaRef  $prefixRef ";
       
         toolbox::run($command);
 
-        
-      
+             
     }
     
 
 ####Run Tophat
+sub tophat{}
 
 
 
