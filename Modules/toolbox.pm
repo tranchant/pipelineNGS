@@ -278,10 +278,6 @@ sub readFileConf		#Read the FileConf and export the value in a hash of hashes
 
 }
 
-###
-#TODO Mettre la fonction readFileConf dans le module configTools.pm
-### CM: pourquoi ?
-###
 
 #########################################
 #Function for exatring options (parameters that'll be given to the tools command)

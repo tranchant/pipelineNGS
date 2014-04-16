@@ -1,26 +1,57 @@
-# CUFFLINKS MODULE BEUUUURRRRKKK LE RETOUR! #
 package cufflinks;
-
 use strict;
 use warnings;
 use lib qw(.);
 use localConfig;
 use toolbox;
 use Data::Dumper;
-###################################
+
 ##############################################
 ##CUFFLINKS
 ##Module containing CUFFLINKS functions
+## Licencied under CeCill-C (http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html) and GPLv3 #
+## Intellectual property belongs to IRD, CIRAD and SouthGreen developpement plateform #
+## Written by Cécile Monat, Ayite Kougbeadjo, Mawusse Agbessi, Christine Tranchant, Marilyne Summo, Cédric Farcy, François Sabot 
+
 ##############################################
+##
+###
+##Adding the tag XS 
+##XS tag is founded in bam file  coming from TopHat or Bowtie and not in other bam file such as Bwa
+sub addingXStag {
+    my ($file,$out) = @_;
+    if ($file !~ m/\.bam$/)
+        {
+        warn ("\n$file is not a BAM file in adding XS tag\n");
+        return 0;
+        }
+    else
+        {
+        ##catch the name of the mapping tools in the bam file
+        my $test=system("samtools view -H $file | grep \@PG");
+        if ($test !~m/TopHat$/) {
+            my $temp = "temp.sam";
+            my $xscom = "$samtools view -h $file | awk '{if(\$0 ~ /XS:A:/ || \$1 ~ /^@/) print \$0; else {if(and(\$2,0x10)) print \$0\"\tXS:A:-\"; else print \$0\"\tXS:A:+\";}}' > $temp ";
+              system("$xscom") and return 0;
+              
+            
+            my $bamcom = "$samtools view -bS -o $out $temp";
+             system("$bamcom") and return 0;
+                 return 1;
+        }
+        
+    }
+    
+}
 ##
 ##
 ##Assembly with Cufflinks
 sub cufflinks
     {
-    my($refFasta, $annotation, $alignementFile, $optionsHachees)=@_;
+    my($refFasta, $annotationGff, $alignementFile, $optionsHachees)=@_;
     #if (toolbox::sizeFile($refFastaFileIn)==1){     ##Check if the reference file exist and is not empty
         my $options=toolbox::extractOptions($optionsHachees, " "); 
-        my $command= "$cufflinks/cufflinks"." $options"." -b $refFasta -g $annotation $alignementFile";
+        my $command= "$cufflinks/cufflinks"." $options"." -b $refFasta -g $annotationGff $alignementFile";
         
         toolbox::run($command);
         if(toolbox::run($command)==1)
