@@ -13,7 +13,35 @@ use Data::Dumper;
 ##Module containing CUFFLINKS functions
 ##############################################
 ##
-##
+####Adding XStag
+##XS tag is founded in bam file  coming from TopHat or Bowtie and not in other bam file such as Bwa
+sub addingXStag {
+    my ($file,$out,$workingdir) = @_;
+    if ($file !~ m/\.bam$/)
+        {
+        warn ("\n$file is not a BAM file in adding XS tag\n");
+        return 0;
+        }
+    else
+        {
+        ##catch the name of the mapping tools in the bam file
+        my $test=system("samtools view -H $file | grep \@PG");
+        if ($test !~m/TopHat$/) {
+            my $temp = "temp.sam";
+            my $xscom = "$samtools view -h $file | awk '{if(\$0 ~ /XS:A:/ || \$1 ~ /^@/) print \$0; else {if(and(\$2,0x10)) print \$0\"\tXS:A:-\"; else print \$0\"\tXS:A:+\";}}' > $temp ";
+              system("$xscom") and return 0;
+              
+            
+            my $bamcom = "$samtools view -bS -o $out $temp";
+             system("$bamcom") and return 0;
+                 return 1;
+        }
+        
+    }
+    
+}
+
+
 ##Assembly with Cufflinks
 sub cufflinks
     {
