@@ -12,4 +12,6 @@ sub foo {}
 
 sub bar{}
 
+sub text{}
+
 1;
