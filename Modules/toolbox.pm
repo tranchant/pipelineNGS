@@ -442,4 +442,39 @@ sub addInfoHeader
     return 1;
 }
 
+#########################################
+# Verifying the SAM/BAM format based on samtools view system
+# samtools view gave an error in case of non SAM or BAM format
+#########################################
+
+sub checkSamOrBamFormat {
+    
+    my ($samFile,$textToAdd)=@_;
+    
+    #Is the file sam of bam ? Requested for the -S option in samtools view
+    my $inputOption;
+    if ($samFile =~ m/\.bam$/) #The file is a BAM file
+    {
+	$inputOption = ""; #no specific option in samtools view requested
+    }
+    elsif ($samFile =~ m/\.sam$/) #the file is a SAM file
+    {
+	$inputOption = " -S ";#-S mean input is SAM
+    }
+    my $checkFormatCommand='$samtools view $inputOption $samFile -H > /dev/null';
+    # The samtools view will ask only for the header to be outputted (-H option), and the STDOUT is redirected to nowher (>/dev/null);
+    my $formatValidation=run($checkFormatCommand);
+    
+    if ($formatValidation == 1)                    # if no error occured in extracting header, ok
+    {
+        toolbox::exportLog("checkSamOrBam ok, your file -> $samFile <- is a SAM/BAM file, go on \n",1);
+	return 1;
+    }
+    else                                # if one or some error(s) occured in extracting header, not ok
+    {
+        toolbox::exportLog("checkSamOrBam not ok, your file -> $samFile <- is not a SAM/BAM file, please check your file \n",0);
+	return 0;
+    }
+}
+
 1;
