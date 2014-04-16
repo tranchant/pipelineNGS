@@ -1,1 +1,0 @@
-bwa sampe Reference.fasta /teams/ggr/pipelineNGS/DATA/4_BWA/RC1_1.BWAALN.sai /teams/ggr/pipelineNGS/DATA/4_BWA/RC1_2.BWAALN.sai /teams/ggr/pipelineNGS/DATA/3_PAIRING_SEQUENCES/RC1_1_CUTADAPT_forwardRepaired.fastq /teams/ggr/pipelineNGS/DATA/3_PAIRING_SEQUENCES/RC1_2_CUTADAPT_reverseRepaired.fastq > /teams/ggr/pipelineNGS/DATA/4_BWA/RC1.BWASAMPE.sam
