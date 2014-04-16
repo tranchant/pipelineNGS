@@ -409,7 +409,15 @@ sub addInfoHeader
 {
     my ($samFile,$textToAdd)=@_;
     
-    #Is the file sam of bam ? Requested for the -S option in samtools view
+    #Is the file sam of bam ?
+    my $formatCheck=checkSamOrBamFormat($samFile);
+    if ($formatCheck == 0)	#The file is not a BAM nor a SAM and cannot be treated here
+    {
+	toolbox::exportLog("$samFile is not a SAM/BAM file for adding info in the header.\nPlease check your file\n",0);
+	return 0;
+    }
+    
+    #Requested for the -S option in samtools view
     my $inputOption;
     if ($samFile =~ m/\.bam$/) #The file is a BAM file
     {
@@ -419,12 +427,6 @@ sub addInfoHeader
     {
 	$inputOption = " -S ";#-S mean input is SAM
     }
-    else	#The file is not a BAM nor a SAM and cannot be treated here
-    {
-	toolbox::exportLog("$samFile is not a SAM/BAM file for adding info in the header.\nPlease check your file\n",0);
-	return 0;
-    }
-    
     #Picking up current header
     my $headerCommand="$samtools view $inputOption -H $samFile > headerFile.txt"; #extract the header and put it in the headerFile.txt
     run($headerCommand);
