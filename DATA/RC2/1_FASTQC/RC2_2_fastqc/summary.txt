@@ -1,0 +1,11 @@
+PASS	Basic Statistics	RC2_2.fastq
+FAIL	Per base sequence quality	RC2_2.fastq
+FAIL	Per sequence quality scores	RC2_2.fastq
+FAIL	Per base sequence content	RC2_2.fastq
+WARN	Per base GC content	RC2_2.fastq
+FAIL	Per sequence GC content	RC2_2.fastq
+PASS	Per base N content	RC2_2.fastq
+PASS	Sequence Length Distribution	RC2_2.fastq
+PASS	Sequence Duplication Levels	RC2_2.fastq
+WARN	Overrepresented sequences	RC2_2.fastq
+FAIL	Kmer Content	RC2_2.fastq

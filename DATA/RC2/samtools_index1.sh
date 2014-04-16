@@ -1,0 +1,1 @@
+samtools index 5_PICARDTOOLS/RC2.PICARDTOOLSSORT.bam

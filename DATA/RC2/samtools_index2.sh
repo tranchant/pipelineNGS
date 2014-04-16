@@ -1,0 +1,1 @@
+samtools index 6_SAMTOOLS/RC2.SAMTOOLSVIEW.bam

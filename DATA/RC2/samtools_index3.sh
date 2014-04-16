@@ -1,0 +1,1 @@
+samtools index 7_GATK/RC2.GATKINDELREALIGNER.bam 

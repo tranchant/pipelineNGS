@@ -1,0 +1,1 @@
+/usr/local/java/latest/bin/java -Xmx12g -jar /home/sabotf/sources/GenomeAnalysisTK/GenomeAnalysisTK.jar -T RealignerTargetCreator --fix_misencoded_quality_scores -fixMisencodedQuals -R Reference.fasta -I 6_SAMTOOLS/RC2.SAMTOOLSVIEW.bam -o 7_GATK/RC2.GATKREALIGNERTARGETCREATOR.intervals
