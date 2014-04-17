@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-use lib qw (../Modules/);
+use lib qw (teams/ggr/pipelineNGS/Modules/);
 use pairing;
 
 chdir '~/DATA/RC1/3_PAIRING_SEQUENCES' or die "Impossible to chdir";
