@@ -178,13 +178,13 @@ sub repairing
 
 
     #Opening infiles
-    open(FOR, "<", $forwardFile) or errorAndDie($!);
-    open(REV, "<", $reverseFile) or errorAndDie($!);
+    open(FOR, "<", $forwardFile) or exportLogLocal(0,0,$!);
+    open(REV, "<", $reverseFile) or exportLogLocal(0,0,$!);
     
     #Opening outfiles
-    open(MATEF, ">",$forwardFileOut) or errorAndDie($!);
-    open(MATER, ">",$reverseFileOut) or errorAndDie($!);
-    open(SINGLE,">",$singleFileOut) or errorAndDie ($!);
+    open(MATEF, ">",$forwardFileOut) or exportLogLocal(0,0,$!);
+    open(MATER, ">",$reverseFileOut) or exportLogLocal(0,0,$!);
+    open(SINGLE,">",$singleFileOut) or exportLogLocal(0,0,$!);
     
     #Creating counters
     my $pairedSequences=0;
@@ -279,9 +279,5 @@ sub extractName{#remove fastq from the name, and clean the name
     return $shortName;
     }
 
-sub errorAndDie {#Error managing, to improve !!TODO
-    my ($error)=@_;
-    exportLogLocal(0,0,$error);
-}
 
 1;
