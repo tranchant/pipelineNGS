@@ -16,7 +16,6 @@ use localConfig;
 use Exporter;
 use Data::Dumper;
 
-
 #Global infos
 our @ISA=qw(Exporter);
 our @EXPORT=qw($configInfos);
