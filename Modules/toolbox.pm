@@ -1,3 +1,5 @@
+package toolbox;
+
 ###################################################################################################################################
 #
 # Licencied under CeCill-C (http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html) and GPLv3
@@ -6,9 +8,6 @@
 # Written by Cécile Monat, Ayité Kougbeadjo, Mawusse Agbessi, Christine Tranchant, Marilyne Summo, Cédric Farcy, François Sabot
 #
 ###################################################################################################################################
-
-
-package toolbox;
 
 use strict;
 use warnings;
@@ -187,7 +186,7 @@ sub makeDir
     
     $erase = 0 if (not defined $erase);
     
-    system("rm -rf $dir") == 0 or die "Can't remove $dir"  if ($erase and existsDir($dir));
+    run("rm -rf $dir") if ($erase and existsDir($dir));
 
     unless (mkdir $dir)  
     {

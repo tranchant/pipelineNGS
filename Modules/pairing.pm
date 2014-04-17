@@ -1,3 +1,5 @@
+package pairing;
+
 ###################################################################################################################################
 #
 # Licencied under CeCill-C (http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html) and GPLv3
@@ -6,9 +8,6 @@
 # Written by Cécile Monat, Ayité Kougbeadjo, Mawusse Agbessi, Christine Tranchant, Marilyne Summo, Cédric Farcy, François Sabot
 #
 ###################################################################################################################################
-
-
-package pairing;
 
 use strict;
 use warnings;
