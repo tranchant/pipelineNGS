@@ -6,7 +6,7 @@ use warnings;
 use lib qw (../Modules/);
 use pairing;
 
-chdir '/teams/ggr/pipelineNGS/DATA/3_PAIRING_SEQUENCES' or die "Impossible to chdir";
-my $reverse='/teams/ggr/pipelineNGS/DATA/2_CUTADAPT/RC1_1.CUTADAPT.fastq';
-my $forward='/teams/ggr/pipelineNGS/DATA/2_CUTADAPT/RC1_2.CUTADAPT.fastq';
+chdir '~/DATA/RC1/3_PAIRING_SEQUENCES' or die "Impossible to chdir";
+my $reverse='~/DATA/RC1/2_CUTADAPT/RC1_1.CUTADAPT.fastq';
+my $forward='~/DATA/RC1/2_CUTADAPT/RC1_2.CUTADAPT.fastq';
 pairing::repairing($reverse,$forward);
