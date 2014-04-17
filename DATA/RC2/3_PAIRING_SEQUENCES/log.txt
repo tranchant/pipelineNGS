@@ -1,0 +1,10 @@
+
+
+<---->An Error Occured!!<---->
+
+	Directory  does not exist : Aucun fichier ou dossier de ce type 
+
+Bye...
+checkFormatFastq ok, your file -> /teams/ggr/pipelineNGS/DATA/RC2/2_CUTADAPT/RC2_1.CUTADAPT.fastq <- is a FASTQ file, go on 
+checkFormatFastq ok, your file -> /teams/ggr/pipelineNGS/DATA/RC2/2_CUTADAPT/RC2_2.CUTADAPT.fastq <- is a FASTQ file, go on 
+1226 pairs were recovered (2452 sequences), and 0 were extracted.
