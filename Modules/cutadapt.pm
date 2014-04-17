@@ -51,6 +51,7 @@ sub createConfFile
 	return 1
     }
     else { toolbox::exportLog("A probleme has occured during the creation of the cutadapt configuratin file\n",0); }
+    
 }
 
 
