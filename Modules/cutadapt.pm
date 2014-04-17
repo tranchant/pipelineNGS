@@ -45,10 +45,12 @@ sub createConfFile
     close CONF;
     close ADAPTATOR;
     
-    if (toolbox::sizeFile($fileConf)){									# Check if the configuration file is not empty
+    if (toolbox::sizeFile($fileConf))
+    {									# Check if the configuration file is not empty
+	toolbox::exportLog("Creation of the cutadapt configuratin file has been correctly done\n",1);
 	return 1
     }
-    
+    else { toolbox::exportLog("A probleme has occured during the creation of the cutadapt configuratin file\n",0); }
 }
 
 
