@@ -176,7 +176,7 @@ sub repairing
    
     my $singleFileOut=$dirOut.$forwardTag."_single.REPAIRING.fastq";
 
-    
+
     #Opening infiles
     open(FOR, "<", $forwardFile) or errorAndDie($!);
     open(REV, "<", $reverseFile) or errorAndDie($!);
@@ -255,9 +255,11 @@ sub repairing
     close REV;
     
     #Export Log
-    exportLogLocal($pairedSequences,$singleSequences,1);
-    return 1;
+    #Creation of the output
+    my $outlog=$pairedSequences." pairs were recovered (".($pairedSequences*2)." sequences), and ".$singleSequences." were extracted.\n";
     
+    #Exporting the output
+    toolbox::exportLog($outlog,1);    
     }
 
 sub extractName{#remove fastq from the name, and clean the name
@@ -275,23 +277,6 @@ sub extractName{#remove fastq from the name, and clean the name
     $shortName=~ s/à/a/g;#removing non utf8 accents from a
     $shortName=~s/\+\+/\.\./;#readding the .. instead of ++, in ref to the fisrt modification.
     return $shortName;
-    }
-
-sub exportLogLocal{#To export logs...
-    my ($pairedSequences,$singleSequences,$controlValue)=@_;
-    if ($controlValue == 1) {#Everything is ok
-        #Creation of the output
-        my $outlog=$pairedSequences." pairs were recovered (".($pairedSequences*2)." sequences), and ".$singleSequences." were extracted.\n";
-        #Exporting the output
-        toolbox::exportLog($outlog,1);
-        }
-    else {#Problem with something
-        #Creating the output
-        my $outlog = "Error during repairing!! The following error was encountered:\n".$controlValue."\n";
-        #Exporting the output
-        toolbox::exportLog($outlog,0);
-        }
-    
     }
 
 sub errorAndDie {#Error managing, to improve !!TODO
